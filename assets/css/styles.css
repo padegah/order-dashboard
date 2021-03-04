@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333333;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    min-height: 100%;
+}
+
+
+.container{
+    /*border: 2px solid #f76707;*/
+    border-radius: 0.94rem;
+    background-color: white;
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: minmax(6.52rem, auto);
+}
+
+.nav{
+    /*border: 2px solid red;*/
+    overflow: hidden;
+    height: 100%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.food{
+    margin-top: 1.75rem;
+    text-align: center;
+    display: block;
+}
+
+.main-content{
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 1.25rem;
+    padding-bottom: 1.25rem;
+    background-color: rgb(243, 236, 236);
+    padding-left: 0.94rem;
+    /*grid-auto-rows: minmax(100px, auto);*/
+}
+
+.cont{
+    background-color: white;
+    border-radius: 7px;
+    grid-auto-rows: minmax(80px, auto);
+    padding: 0.63rem;
+}
+
+.head{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.search{
+    margin-top: 1.875rem;
+    position: absolute;
+}
+
+#search{
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+    box-shadow:0 0 0.94rem 4px rgba(0,0,0,0.06);
+}
+
+.bell{
+    margin-top: 1.875rem;
+    position: absolute;
+    right: 200px;
+}
+
+.user{
+    margin-top: 0.94rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 59.375rem;
+}
+
+.order-list{
+    margin-top: 1.875rem;
+}
+
+.order-number div{
+    font-size: 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    width: 5.0rem;
+    height: 2.5rem;
+    display: inline-block;
+    border-radius: 0.63rem;
+}
+
+.ord-num1, .ord-num3, .ord-num4, .ord-num5{
+    border: 0.0625rem solid rgb(144, 223, 144);
+    color: rgb(144, 223, 144);
+}
+
+.ord-num2{
+    border: 0.0625rem solid rgb(230, 127, 149);
+    color: rgb(167, 142, 148);
+}
+
+.ord-num6{
+    border: 0.0625rem solid rgb(230, 127, 149);
+    border-left: 0.3125rem solid rgb(230, 127, 149);
+    color: rgb(230, 127, 149);
+    border-radius: 0px 5px 5px 0px !important;
+}
+
+.ord-num7{
+    border: 0.0625rem solid rgb(233, 225, 113);
+    border-left: 0.3125rem solid rgb(233, 225, 113);
+    color: rgb(233, 225, 113);
+    border-radius: 0px 5px 5px 0px !important;
+}
+
+.ord-num8, .ord-num9{
+    border: 0.0625rem solid rgb(144, 223, 144);
+    border-left: 0.3125rem solid rgb(144, 223, 144);
+    color: rgb(144, 223, 144);
+    border-radius: 0px 5px 5px 0px !important;
+}
+
+.ord-num10{
+    border: 0.0625rem solid rgb(51, 50, 50);
+    border-left: 0.3125rem solid rgb(51, 50, 50);
+    color: rgb(51, 50, 50);
+    border-radius: 0px 5px 5px 0px !important;
+}
+
+.l-nav{
+    margin-left: 1.25rem;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    padding: 0.3125rem;
+    width: 12.5rem;
+    border: 0.0625rem solid white;
+}
+
+.icon{
+    text-align: center;
+    font-size: 1.5625rem;
+}
+
+.link a{
+    font-size: 0.75rem;
+    text-align: left;
+    vertical-align: middle;
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+i.material-icons{
+    color: black;
+}
+
+.link a:hover{
+    font-size: 0.75rem;
+    text-align: left;
+    vertical-align: middle;
+    font-style: none;
+    text-decoration: none;
+    color: rgb(250, 85, 8);
+}
+
+.l-nav:hover i.material-icons{
+    color: rgb(250, 85, 8); 
+}
+
+.l-nav:hover{
+    padding: 0.3125rem;
+    width: 12.5rem;
+    border: 0.0625rem solid rgb(250, 85, 8);
+    border-radius: 0.3125rem;
+}
+
+.cont{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1.25rem;
+    overflow: hidden;
+}
+
+.one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.six{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.order{
+    margin-top: 1.25rem;
+    position: absolute;
+    font-size: 0.8125rem;
+}
+
+
+.three{
+    font-size: 0.8125rem;
+}
+
+.number, .main, .total{
+    font-weight: bold;
+}
+
+.date, .desc, .nbr{
+    font-size: 0.6875rem;
+    color: rgb(134, 130, 130);
+}
+
+.avatar{
+    margin-top: 0.94rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 250px;
+}
+
+
+.two{
+    width: 5.0rem;
+    height: 5.0rem;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.items{
+    position: absolute;
+    font-size: 0.875rem;
+}
+
+.rejected{
+    font-size: large;
+    position: absolute;
+    margin-left: 11.25rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    border: 0.0625rem solid rgb(230, 127, 149);
+    color: rgb(230, 127, 149);
+    border-radius: 0.63rem;
+    width: 3.125rem;
+    height: 2.5rem;
+}
+
+.rejected-1{
+    position: absolute;
+    margin-left: 10.625rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    border: 0.0625rem solid rgb(230, 127, 149);
+    color: rgb(230, 127, 149);
+    border-radius: 0.63rem;
+    width: 8.75rem;
+    height: 2.5rem;
+}
+
+.approved{
+    font-size: large;
+    position: relative;
+    margin-left: 16.25rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    border: 0.0625rem solid rgb(144, 223, 144);
+    color: rgb(144, 223, 144);
+    border-radius: 0.63rem;
+    width: 3.125rem;
+    height: 2.5rem;
+}
+
+.approved-1{
+    position: relative;
+    margin-left: 10.625rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    border: 0.0625rem solid rgb(144, 223, 144);
+    color: rgb(144, 223, 144);
+    border-radius: 0.63rem;
+    width: 8.75rem;
+    height: 2.5rem;
+}
+
+.price{
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.qty{
+    position: relative;
+    left: 9.375rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+i.fa:hover{
+    cursor: pointer;
+}
+
