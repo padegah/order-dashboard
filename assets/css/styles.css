@@ -14,13 +14,13 @@ body{
 
 
 .container{
-    /*border: 2px solid #f76707;*/
     border-radius: 0.94rem;
     background-color: white;
     display: grid;
     grid-gap: 1.25rem;
     grid-template-columns: 1fr 4fr;
     grid-auto-rows: minmax(6.52rem, auto);
+    overflow: hidden;
 }
 
 .nav{
@@ -28,6 +28,7 @@ body{
     overflow: hidden;
     height: 100%;
     border-radius: 5px 0px 0px 5px;
+    float: left;
 }
 
 .food{
@@ -37,6 +38,7 @@ body{
 }
 
 .main-content{
+    float: left;
     display: grid;
     grid-gap: 1.25rem;
     grid-template-columns: 1fr 1fr 1fr;
@@ -44,48 +46,55 @@ body{
     padding-bottom: 1.25rem;
     background-color: rgb(243, 236, 236);
     padding-left: 0.94rem;
+    overflow: auto;
     /*grid-auto-rows: minmax(100px, auto);*/
 }
 
 .cont{
     background-color: white;
     border-radius: 7px;
-    grid-auto-rows: minmax(80px, auto);
+    grid-auto-rows: minmax(5rem, auto);
     padding: 0.63rem;
+    overflow: auto;
 }
 
 .head{
     grid-column-start: 1;
     grid-column-end: 4;
+    overflow: auto;
+    position: relative;
 }
 
 .search{
     margin-top: 1.875rem;
-    position: absolute;
+    position: static;
+    width: auto;
+    display: inline-block;
 }
 
 #search{
     border: none;
-    border-radius: 5px;
-    font-size: 12px;
-    padding: 5px;
+    border-radius: 0.3125rem;
+    font-size: 0.75rem;
+    padding: 0.3125rem;
     box-shadow:0 0 0.94rem 4px rgba(0,0,0,0.06);
 }
 
 .bell{
     margin-top: 1.875rem;
     position: absolute;
-    right: 200px;
+    right: 12.5rem;
+    display: inline-block;
+    font-size: 20px;
 }
 
 .user{
     margin-top: 0.94rem;
-    width: 3.125rem;
-    height: 3.125rem;
-    position: relative;
-    overflow: hidden;
+    width: 45px;;
+    height: 45px;
+    position: absolute;
     border-radius: 50%;
-    margin-left: 59.375rem;
+    right: 15px;
 }
 
 .order-list{
@@ -199,22 +208,28 @@ i.material-icons{
 .one{
     grid-column-start: 1;
     grid-column-end: 3;
+    position: relative;
 }
+
 
 .six{
     grid-column-start: 1;
     grid-column-end: 3;
+    position: relative;
+    display: inline-block;
 }
 
 .order{
     margin-top: 1.25rem;
-    position: absolute;
+    position: static;
     font-size: 0.8125rem;
+    display: inline-block;
 }
 
 
 .three{
     font-size: 0.8125rem;
+    position: relative;
 }
 
 .number, .main, .total{
@@ -226,14 +241,16 @@ i.material-icons{
     color: rgb(134, 130, 130);
 }
 
+
 .avatar{
-    margin-top: 0.94rem;
+    margin-top: 1.25rem;
     width: 3.125rem;
     height: 3.125rem;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     border-radius: 50%;
-    margin-left: 250px;
+    right: 5px;
+    cursor: pointer;
 }
 
 
@@ -246,14 +263,15 @@ i.material-icons{
 }
 
 .items{
-    position: absolute;
+    position: static;
     font-size: 0.875rem;
+    display: inline-block;
 }
 
 .rejected{
     font-size: large;
     position: absolute;
-    margin-left: 11.25rem;
+    right: 105px;
     text-align: center;
     vertical-align: middle;
     line-height: 2.5rem;
@@ -266,7 +284,7 @@ i.material-icons{
 
 .rejected-1{
     position: absolute;
-    margin-left: 10.625rem;
+    right: 5px;
     text-align: center;
     vertical-align: middle;
     line-height: 2.5rem;
@@ -279,8 +297,8 @@ i.material-icons{
 
 .approved{
     font-size: large;
-    position: relative;
-    margin-left: 16.25rem;
+    position: absolute;
+    right: 5px;
     text-align: center;
     vertical-align: middle;
     line-height: 2.5rem;
@@ -292,8 +310,8 @@ i.material-icons{
 }
 
 .approved-1{
-    position: relative;
-    margin-left: 10.625rem;
+    position: absolute;
+    right: 5px;
     text-align: center;
     vertical-align: middle;
     line-height: 2.5rem;
@@ -305,14 +323,15 @@ i.material-icons{
 }
 
 .price{
-    position: absolute;
+    position: static;
     font-weight: bold;
     font-size: 0.75rem;
+    display: inline-block;
 }
 
 .qty{
-    position: relative;
-    left: 9.375rem;
+    position: absolute;
+    right: 5px;
     font-weight: bold;
     font-size: 0.75rem;
 }
@@ -321,3 +340,11 @@ i.fa:hover{
     cursor: pointer;
 }
 
+/*
+@media all and (max-width: 700px) {
+    .main-content{
+        display: grid;
+        grid-gap: 1.25rem;
+        grid-template-columns: 1fr;
+    }
+}*/
