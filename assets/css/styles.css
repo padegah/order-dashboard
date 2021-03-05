@@ -46,7 +46,7 @@ body{
     padding-bottom: 1.25rem;
     background-color: rgb(243, 236, 236);
     padding-left: 0.94rem;
-    overflow: auto;
+    overflow: hidden;
     /*grid-auto-rows: minmax(100px, auto);*/
 }
 
@@ -55,13 +55,13 @@ body{
     border-radius: 7px;
     grid-auto-rows: minmax(5rem, auto);
     padding: 0.63rem;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .head{
     grid-column-start: 1;
     grid-column-end: 4;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
 }
 
@@ -90,9 +90,10 @@ body{
 
 .user{
     margin-top: 0.94rem;
-    width: 45px;;
-    height: 45px;
+    width: 3.125rem;
+    height: 3.125rem;
     position: absolute;
+    overflow: hidden;
     border-radius: 50%;
     right: 15px;
 }
@@ -126,28 +127,28 @@ body{
     border: 0.0625rem solid rgb(230, 127, 149);
     border-left: 0.3125rem solid rgb(230, 127, 149);
     color: rgb(230, 127, 149);
-    border-radius: 0px 5px 5px 0px !important;
+    border-radius: 0px 0.63rem 0.63rem 0px !important;
 }
 
 .ord-num7{
     border: 0.0625rem solid rgb(233, 225, 113);
     border-left: 0.3125rem solid rgb(233, 225, 113);
     color: rgb(233, 225, 113);
-    border-radius: 0px 5px 5px 0px !important;
+    border-radius: 0px 0.63rem 0.63rem 0px !important;
 }
 
 .ord-num8, .ord-num9{
     border: 0.0625rem solid rgb(144, 223, 144);
     border-left: 0.3125rem solid rgb(144, 223, 144);
     color: rgb(144, 223, 144);
-    border-radius: 0px 5px 5px 0px !important;
+    border-radius: 0px 0.63rem 0.63rem 0px !important;
 }
 
 .ord-num10{
     border: 0.0625rem solid rgb(51, 50, 50);
     border-left: 0.3125rem solid rgb(51, 50, 50);
     color: rgb(51, 50, 50);
-    border-radius: 0px 5px 5px 0px !important;
+    border-radius: 0px 0.63rem 0.63rem 0px !important;
 }
 
 .l-nav{
@@ -340,11 +341,74 @@ i.fa:hover{
     cursor: pointer;
 }
 
-/*
-@media all and (max-width: 700px) {
-    .main-content{
+
+/* tablet view */
+@media all and (max-width: 1000px) {
+    .bell{
+        display: inline-block;
+    }
+
+    .price{
+        display: block;
+    }
+
+    .rejected-1, .approved-1{
+        position: absolute;
+        right: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5rem;
+        border-radius: 0.63rem;
+        width: 5.75rem;
+        height: 1.5rem;
+        font-size: 12px;
+    }
+
+    .approved{
+        position: absolute;
+        right: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5rem;
+        border-radius: 0.63rem;
+        width: 2.125rem;
+        height: 1.5rem;
+    }
+
+    .rejected{
+        position: absolute;
+        right: 65px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5rem;
+        border-radius: 0.63rem;
+        width: 2.125rem;
+        height: 1.5rem;
+    }
+}
+
+/* mobile view */
+@media all and (max-width: 768px) {
+    .container{
+        border-radius: 0.94rem;
+        background-color: white;
         display: grid;
         grid-gap: 1.25rem;
         grid-template-columns: 1fr;
+        grid-auto-rows: minmax(6.52rem, auto);
+        overflow: hidden;
     }
-}*/
+
+
+    .main-content{
+        display: block;
+    }
+
+    .cont{
+        margin: 15px;
+    }
+
+    .bell{
+        display: none;
+    }
+}
