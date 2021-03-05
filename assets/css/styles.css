@@ -412,6 +412,10 @@ i.fa:hover{
         display: none;
     }
 
+    .price{
+        display: inline-block;
+    }
+
     .rejected-1, .approved-1{
         position: absolute;
         right: 5px;
