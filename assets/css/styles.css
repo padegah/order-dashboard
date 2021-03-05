@@ -411,4 +411,38 @@ i.fa:hover{
     .bell{
         display: none;
     }
+
+    .rejected-1, .approved-1{
+        position: absolute;
+        right: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 2.5rem;
+        border-radius: 0.63rem;
+        width: 8.75rem;
+        height: 2.5rem;
+        font-size: 18px;
+    }
+
+    .approved{
+        position: absolute;
+        right: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 2.5rem;
+        border-radius: 0.63rem;
+        width: 4.125rem;
+        height: 2.5rem;
+    }
+
+    .rejected{
+        position: absolute;
+        right: 105px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 2.5rem;
+        border-radius: 0.63rem;
+        width: 4.125rem;
+        height: 2.5rem;
+    }
 }
